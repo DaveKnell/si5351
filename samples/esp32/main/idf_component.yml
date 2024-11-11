@@ -1,0 +1,6 @@
+dependencies:
+  daveknell/si5351:
+    path: ../../../../si5351
+
+
+

@@ -1,0 +1,16 @@
+dependencies:
+  daveknell/si5351:
+    dependencies: []
+    source:
+      path: C:\Users\david\Dropbox\Projects\ESP32-Audio\esp32-audio-app\main\components\si5351
+      type: local
+    version: '*'
+  idf:
+    source:
+      type: idf
+    version: 5.3.1
+direct_dependencies:
+- daveknell/si5351
+manifest_hash: c4e2f58b39859873bbdcbabfd30ee0b8c6fffed0d71fa1fb3ff2ace000655071
+target: esp32
+version: 2.0.0

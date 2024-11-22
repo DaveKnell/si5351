@@ -8,6 +8,7 @@ Consider where b/c should be 1/7 - 1/7 can be precisely expressed as 1/7, but it
 
 So how to calculate the most accurate combination of numerator and denominator?  A straighforward method is to calculate the best approximation for each denominator and return the best:
 
+
   def simple_approx(x, max_denominator=1000):
       # Ensure x is between 0 and 1
       if not 0 <= x <= 1:

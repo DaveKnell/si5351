@@ -3,11 +3,11 @@ A SI5351 driver.
 
 ## Interesting notes on the SI5351
 
-One of the interesting things about the SI5351 is its PLL dividers which have both an integer and a fractional part - a + b/c as it is in the documentation, with c from 1 to 1,048,575.  The code that I've seen which calculates the fractional part just sets c to 1,048,575, but this isn't necessarily optimal.  
+One of the interesting things about the SI5351 is its PLL dividers which have both an integer and a fractional part - a + b/c as it is in the documentation, with c from 1 to 1,048,575.  The code that I've seen which calculates the fractional part just sets c to 1,048,575, but this isn't necessarily optimal. 
+
 Consider where b/c should be 1/7 - 1/7 can be precisely expressed as 1/7, but it'd be 149,796.429.../1,048,575.
 
-So how to calculate the most accurate combination of numerator and denominator?  A straighforward method is to calculate the best approximation for each denominator and return the best:
-
+So how to calculate the most accurate combination of numerator and denominator?  A straighforward method is to calculate the best approximation for each denominator and return the optimum one found:
 
     def simple_approx(x, max_denominator=1000):
         # Ensure x is between 0 and 1

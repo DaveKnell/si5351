@@ -102,4 +102,4 @@ gives the following result on my desktop PC:
 
 - so about 50x faster over the denominator range in question.
 
-Is this important in the current application?  Probably not, as it's unlikely that we're going to be trying to alter the SI5313's PLL frequencies that often.  But it's neat.
+Is this important in the current application?  Probably not, as it's unlikely that we're going to be trying to alter the SI5351's PLL frequencies that often.  But it's neat.
